@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f3f6fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    background: #ffffff;
+    width: 420px;
+    max-width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    padding: 20px 20px 70px;
+    position: relative;
+}
+
+/* Header */
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f6fd6;
+    color: #ffffff;
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+}
+
+.header-left h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header-left p {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ffffff22;
+    border: 1px solid #ffffff55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-role {
+    font-size: 11px;
+    opacity: 0.85;
+}
+
+/* Summary cards */
+
+.summary-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    background: #f7f9ff;
+    border-radius: 12px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #e0e6f5;
+}
+
+.summary-icon {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.summary-label {
+    font-size: 11px;
+    color: #5c6a88;
+}
+
+.summary-value {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1f6fd6;
+    margin-top: 4px;
+}
+
+/* Clock section */
+
+.clock-section {
+    background: #f7f9ff;
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #e0e6f5;
+}
+
+.clock-section h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #2c3a55;
+}
+
+.clock-display {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#main-clock {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1f6fd6;
+}
+
+#main-date {
+    font-size: 13px;
+    color: #4b5a78;
+    margin-top: 4px;
+}
+
+#main-weekday {
+    font-size: 12px;
+    color: #7a869f;
+    margin-top: 2px;
+}
+
+.btn-marcar {
+    width: 100%;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    background: #28a745;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-marcar:hover {
+    background: #218838;
+}
+
+.btn-marcar:active {
+    transform: scale(0.98);
+}
+
+/* Logs section */
+
+.logs-section {
+    margin-bottom: 0;
+
+}
+
+.logs-section h2 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #2c3a55;
+}
+
+.logs-list {
+    list-style: none;
+    border-radius: 12px;
+    background: #f7f9ff;
+    border: 1px solid #e0e6f5;
+    padding: 8px;
+    height: 180px;
+    overflow-y: scroll;
+}
+
+.logs-list::-webkit-scrollbar {
+    display: none;
+}
+
+.log-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 4px;
+    font-size: 12px;
+    color: #2c3a55;
+}
+
+.log-item+.log-item {
+    border-top: 1px solid #e0e6f5;
+}
+
+.log-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.log-icon {
+    font-size: 14px;
+}
+
+.log-label {
+    font-weight: 500;
+}
+
+.log-time {
+    font-weight: 600;
+    color: #1f6fd6;
+}
